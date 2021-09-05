@@ -13,25 +13,68 @@ $(document).ready(function(){
       dots:false,
       responsive:{
           0:{
-              items:1
+              items:2
           },
           500:{
+            items:3
+          },
+          776:{
             items:4
           },
           991:{
+            items:5
+          },
+          1200:{
               items:6
           },
       }
   })
 
-  $('.partners-ar.right').click(function(e) {
+  $('.partners .nav-circle.right').click(function(e) {
     e.preventDefault();
     partners.trigger('next.owl.carousel');
     })
 
-    $('.partners-ar.left').click(function(e) {
+    $('.partners .nav-circle.left').click(function(e) {
         e.preventDefault();
         partners.trigger('prev.owl.carousel');
+    })
+
+
+    var learn = $('.learning__carousel');
+
+    learn.owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      dots:false,
+      responsive:{
+          0:{
+              items:2
+          },
+          500:{
+            items:3
+          },
+          776:{
+            items:3
+          },
+          991:{
+            items:4
+          },
+          1200:{
+              items:5
+          },
+      }
+  })
+
+  $('.learn .nav-circle.right').click(function(e) {
+    e.preventDefault();
+    learn.trigger('next.owl.carousel');
+    })
+
+    $('.learn .nav-circle.left').click(function(e) {
+        e.preventDefault();
+        learn.trigger('prev.owl.carousel');
     })
 
 
