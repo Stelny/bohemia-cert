@@ -446,6 +446,103 @@ align-items: center;
 	color: #8e8e8e;
 	font-size: 14px;
 }
+.learn-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem 0;
+}
+.learn-buttons a {
+	padding: 0.75rem 2rem;
+	font-size: 19px;
+	font-weight: bold;
+	color: white;
+	background: #8e9396;
+	margin: .5rem;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+}
+.learn-buttons a.active, .learn-buttons a:hover {
+	background: var(--primary);
+	text-decoration: none;
+}
+.learn-buttons a.certification::before {
+	content: url(../icons/crown.svg);
+	margin-right: 1rem;
+}
+
+.learn-buttons a.learning::before {
+	content: url(../icons/bulb.svg);
+	margin-right: 1rem;
+}
+.progress-item-num {
+	display: flex;
+	align-items: center;
+}
+.progress-item-num span {
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	border: 1px dashed white;
+	color: white;
+	font-size: 32px;
+	font-family: 'Manrope', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.progress-item-num::after {
+	content: url(../icons/long-arrow.svg);
+	margin-left: 1rem;
+}
+.progress-item:last-child .progress-item-num::after {
+	display: none;
+}
+.progres {
+	padding: 5rem 0;
+	background: url(../images/bg-red.png);
+	min-height: 700px;
+}
+.progres h2 {
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 4rem ;
+}
+.learn {
+	padding: 3rem 0;
+}
+.progress-item-heading {
+	font-size: 26px;
+	font-weight: 700;
+	color: white;
+	margin: 2rem 0;
+	margin-bottom: 1rem;
+}
+.progress-item-desc {
+	color: #fab6bd;
+	font-size: 15px;
+}
+.progress-content {
+	width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+}
+.progress-item {
+	width: 100%;
+	max-width: 25%;
+	padding-right: 2rem;
+}
+@media (max-width: 1300px) { 
+	.progress-item {
+		max-width: 50%;
+		margin-bottom: 1rem;
+	}
+	.progress-item-num::after {
+		display: none;
+	}
+} 
 @media (max-width: 1200px) { 
 	.lang {
 		margin-right: 1rem;
@@ -522,5 +619,8 @@ align-items: center;
  @media (max-width: 776px) { 
 	 .header {
 		 padding: 1.5rem 0;
+	 }
+	 .progress-item {
+		 max-width: 100%;
 	 }
  }
