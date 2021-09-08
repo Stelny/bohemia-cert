@@ -534,6 +534,142 @@ align-items: center;
 	max-width: 25%;
 	padding-right: 2rem;
 }
+.subpage-breadcrumb {
+	padding: 4rem 0;
+}
+.subpage-breadcrumb h1 {
+	font-family: 'Manrope', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+.subpage {
+	padding: 4rem 0;
+}
+.subpage-breadcrumb ul {
+	padding: 0;
+	list-style: none;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+.subpage-breadcrumb ul li a {
+	color: #fab6bd;
+}
+.subpage-breadcrumb ul li::after {
+	content: url(../icons/arrow-mid.svg);
+	padding: 0 0.5rem;
+}
+.subpage-breadcrumb ul li:last-child:after {
+	display: none;
+}
+.subpage p, .subpage li, .subpage td {
+	font-size: 18px;
+	color: #232323;
+}
+.subpage h2, .subpage h3, .subpage h4,.subpage h5 {
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+.subpage h2 {
+	font-size: 40px;
+}
+.subpage h3 {
+	font-size: 32px;
+}
+.subpage h4 {
+	font-size: 28px;
+}
+.subpage h5 {
+	font-size: 24px;
+}
+iframe {
+	max-width: 100%;
+}
+.input-div input, .input-div textarea {
+	padding: 55px;
+	width: 100%;
+	display: block;
+	border: none;
+	padding: 1rem 1.5rem;
+	margin-bottom: 23px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px !important;
+	color: #484848;
+	outline: none;
+}
+.form-section {
+	background: #eeeeee;
+	padding: 4rem;
+	margin: 2rem 0;
+}
+.form-section-in {
+	max-width: 900px;
+	margin: auto;
+}
+.btn-default  {
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 50px;
+	border: 2px solid var(--primary);
+	display: flex;
+	background: var(--primary);
+	max-width: fit-content;
+	max-width: -moz-fit-content;
+	font-weight: 500;
+	margin: auto;
+	cursor: pointer;
+}
+.btn-default::before {
+	content: url(../icons/arrow.svg);
+	margin-right: 1rem;
+}
+.subpage th {
+	background: #f5f5f5;
+}
+.subpage th, .subpage td {
+	padding: 1rem 1.5rem;
+	font-size: 15px;
+}
+.subpage tr {
+	border-bottom: 1px solid #f5f5f5;
+}
+table {
+	width: 100%;
+}
+.contact-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	padding-left: 3rem;
+	position: relative;
+}
+.contact-item p {
+	color: #8e8e8e;
+	font-size: 15px;
+	line-height: 1.7;
+}
+.contact-item p b {
+	color: #414040;
+	font-size: 18px;
+}
+.contact-item.phone a {
+	color: #414040;
+	font-weight: 500;
+	font-size: 22px;
+}
+.contact-item.phone::before {
+	content: url(../icons/phone-c.svg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.contact-item.gps::before {
+	content: url(../icons/gps.svg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 @media (max-width: 1300px) { 
 	.progress-item {
 		max-width: 50%;
